@@ -16,6 +16,32 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
     setState(() {});
   }
 
+  //? These are the examples from widget lifecycle
+
+  //? @override
+  //? void initState() {
+  //?   TODO: implement initState
+  //?   super.initState();
+  //? }
+
+  //? void didChangeDependencies() {
+  //?  TODO: implement didChangeDependencies
+  //? @override
+  //?   super.didChangeDependencies();
+  //? }
+
+  //? @override
+  //? void didUpdateWidget(covariant CurrencyConverter oldWidget) {
+  //?   TODO: implement didUpdateWidget
+  //?   super.didUpdateWidget(oldWidget);
+  //? }
+
+  @override
+  void dispose() {
+    textEditingController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     const border = OutlineInputBorder(
