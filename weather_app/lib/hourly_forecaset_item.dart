@@ -43,7 +43,7 @@ class HourlyForecastItem extends StatelessWidget {
               height: 8,
             ),
             Text(
-              temperature,
+              '$temperature °C',
             ),
           ],
         ),
