@@ -18,7 +18,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   // late final Future<Map<String, dynamic>> weather;
   Future<Map<String, dynamic>> getCurrentWeather() async {
     try {
-      String cityName = 'Sri Ganganagar';
+      String cityName = 'Bengaluru';
       final res = await http.get(
         Uri.parse(
             'https://api.openweathermap.org/data/2.5/forecast?q=$cityName&APPID=$openWeatherAPIKey'),
