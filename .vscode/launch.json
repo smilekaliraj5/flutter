@@ -63,6 +63,26 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
+    },
+    {
+      "name": "login_app",
+      "cwd": "login_app",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "login_app (profile mode)",
+      "cwd": "login_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "login_app (release mode)",
+      "cwd": "login_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
     }
   ]
 }
