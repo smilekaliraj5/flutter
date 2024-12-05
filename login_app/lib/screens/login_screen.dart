@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
             content: const Text('Incorrect Email or Password.'),
             actions: [
               TextButton(
-                onPressed: () => Navigator.pop(context),
+                onPressed: () => Navigator.of(context).pop(),
                 child: const Text('OK'),
               ),
             ],
@@ -66,6 +66,7 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 20),
             CustomButton(
               text: 'Login',
+              icon: Icons.login,
               onPressed: validateLogin,
             ),
           ],

@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
+  final IconData icon;
   final VoidCallback onPressed;
 
   const CustomButton({
     super.key,
     required this.text,
+    required this.icon,
     required this.onPressed,
   });
 
@@ -33,10 +35,10 @@ class CustomButton extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            const Icon(
-              Icons.login,
+            Icon(
+              icon,
               color: Colors.black,
-            )
+            ),
           ],
         ),
       ),
